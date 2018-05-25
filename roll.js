@@ -79,7 +79,7 @@ Draw.loadPlugin(function(ui) {
     };
 
     function addbits(s){
-        let total= 0, s= s.match(/[+\-]*(\.\d+|\d+(\.\d+)?)/g) || [];
+        var total= 0, s= s.match(/[+\-]*(\.\d+|\d+(\.\d+)?)/g) || [];
         while(s.length){
             total+= parseFloat(s.shift());
         }
